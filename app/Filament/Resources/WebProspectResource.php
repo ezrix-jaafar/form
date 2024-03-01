@@ -137,8 +137,8 @@ class WebProspectResource extends Resource
                         'Landing Page' => 'info',
                         'Sales Page' => 'success',
                         'E-commerce' => 'warning',
-                        'Starter website' => 'danger',
-                        'Corporate website' => 'primary',
+                        'Starter Website' => 'danger',
+                        'Corporate Website' => 'primary',
                     }),
                 Tables\Columns\IconColumn::make('status')
                     ->icon(fn (string $state): string => match ($state) {
