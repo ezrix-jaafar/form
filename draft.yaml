@@ -1,0 +1,18 @@
+models:
+  Prospect:
+    name: string
+    phone: string
+    email: string
+    brand_name: string
+    business_type: string
+    role: string
+    last_30days_sales: string
+    sales_rep_id: unsignedInteger
+    relationships:
+      belongsTo: SalesRep
+
+  SalesRep:
+    name: string
+    whatsapp: string
+    relationships:
+      hasMany: Prospect

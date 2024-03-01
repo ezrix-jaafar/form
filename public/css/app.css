@@ -1,0 +1,33 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.input-label {
+    transition: all 0.3s ease-in-out;
+}
+
+.input-label.small {
+    font-size: 0.75rem;
+    top: -0.75rem;
+}
+
+.input-empty {
+
+    border-color: red;
+}
+
+.input-focus::placeholder {
+    color: transparent;
+}
+
+.btn-green {
+    background-color: #14CC60;
+}
+
+.btn-green:hover {
+    background-color: #079e43;
+}
+
+.text-10px {
+    font-size: 12px;
+}

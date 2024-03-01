@@ -1,0 +1,11 @@
+created:
+    - database/factories/ProspectFactory.php
+    - database/factories/SalesRepFactory.php
+    - database/migrations/2024_02_27_085133_create_prospects_table.php
+    - database/migrations/2024_02_27_085134_create_sales_reps_table.php
+    - app/Models/Prospect.php
+    - app/Models/SalesRep.php
+models:
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable' }
+    Prospect: { name: string, phone: string, email: string, brand_name: string, business_type: string, role: string, last_30days_sales: string, sales_rep_id: unsignedInteger, relationships: { belongsTo: SalesRep } }
+    SalesRep: { name: string, whatsapp: string, relationships: { hasMany: Prospect } }
